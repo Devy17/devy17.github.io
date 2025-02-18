@@ -1,0 +1,34 @@
+baseURL: https://devy17.github.io
+languageCode: en-us
+title: Devy17
+theme: ["PaperMod"]
+
+params:
+  defaultTheme: auto
+
+  homeInfoParams:
+    Title: Devy17
+    Content: What does not kill me makes me stronger.
+
+  socialIcons:
+    - name: "Instagram"
+      url: "https://www.instagram.com/hwahanuri/"
+    - name: "SoundCloud"
+      url:  "https://soundcloud.com/hwaha0824"
+    - name: "Github"
+      url: "https://github.com/Devy17"
+  
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  
+  comments: true
+
+menu: 
+  main:
+     - identifier: Tags
+       name: Tags
+       url: /Tags/
+       weight: 10
+
+ShowToc: true
+TocOpen: true
