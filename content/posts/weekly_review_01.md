@@ -30,7 +30,7 @@ tags: []
 - *Fork*
 - Git flow 버전 관리 전략
 - Github로 협업하기 실습 (*Collabortor, Issue, Project* 등...)
-- Java 개요요
+- Java 개요
 
 ### 2/21
 - 졸업식으로 인한 휴가... ㅠㅠ  
