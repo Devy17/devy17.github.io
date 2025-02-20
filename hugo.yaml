@@ -1,14 +1,22 @@
 baseURL: https://devy17.github.io
 languageCode: en-us
-title: Devy17
+title: Devy17's Workspace
 theme: ["PaperMod"]
+
+profileMode:
+    enable: true
+    title: "Devy17"
+    subtitle: "what"
+    imageUrl: "assets/Profile_Image.jpg"
+    imageWidth: 220
+    imageHeight: 220
 
 params:
   defaultTheme: auto
 
-  homeInfoParams:
-    Title: Devy17
-    Content: What does not kill me makes me stronger.
+  # homeInfoParams:
+  #   Title: Devy17
+  #   Content: What does not kill me makes me stronger.
 
   socialIcons:
     - name: "Instagram"

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>[플레이데이터 풀스택 백엔드 8기] 1주차 주간 회고 | Devy17&#39;s Workspace</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+플레이데이터 풀스택 백엔드 8기 과정이 드디어 시작되었다..!
+아직은 완전히 적응했다는 느낌이 들지는 않지만&hellip;
+그래도 어쨌거나 한 주가 지났으니 회고를 작성해보고자 한다.
+
+학습 내용
+2/18
+
+OT 진행
+Git의 개요
+Git의 기본 커맨드 (init, add, commit 등..)
+branch의 활용
+
+2/19
+
+merge와 conflict 대처법
+Git 심화 활용 (diff, stash, checkout 등..)
+reset과 revert
+Github를 이용한 원격 저장소 관리
+push와 pull
+
+2/20
+
+PR (Pull Request)
+Fork
+Git flow 버전 관리 전략
+Github로 협업하기 실습 (Collabortor, Issue, Project 등&hellip;)
+Java 개요요
+
+2/21
+
+졸업식으로 인한 휴가&hellip; ㅠㅠ
+
+
+개인 학습
+
+현재 글을 쓰고 있는 이 블로그를 만들었다.  더 자세한 내용은 추후 포스팅을 통해 조금 더 자세히 다루어 볼 생각이다.
+
+Github page 기능을 사용함
+hugo라는 static site generator를 사용함
+마크다운으로 블로그 작성
+yaml 문서 다뤄보기
+Github Action 사용
+
+
+
+좋았던 점
+
+가장 좋았던 건 시설이 아닐까 싶다.. 집보다 학원이 더 집중이 잘되는 건 도대체 뭐냐고..
+강사님이 짱이다. 금요일에는 커피도 돌리셨다고 한다. 물론 나는 졸업 이슈로 받지 못했지만 ㅠㅠ 그래도 설명도 잘해주시고 질문도 되게 잘 받아주셔서 부담 없이 수업에 임할 수 있게 해주신다..
+3일 정도 밖에 오지 않아서인지는 모르지만, 아주 사소한 것이라도 불편한 부분이 없도록 노력해주시는 것이 보인다.
+
+
+아쉬웠던 점
+
+확실히 통학은 힘들다.. 알고 있었지만 지하철에서 보내는 시간이 조금 아까운 것은 어쩔 수 없는 것 같다..
+강남이기 때문에 주변 밥값이 살벌하다. 칼국수가 만원;; 조금 선 넘은 것 같다.
+
+
+개선할 점
+
+20일 점심시간 후 실습 직전 잠깐 졸 뻔했다.. 잠을 충분히 자도록 하는 것이 좋을 것 같다.
+
+
+다음 주 계획
+
+미뤄두었던 공룡책 강의 듣고 블로그 정리
+Linux 환경과 조금 더 친해지기
+Vim 에디터 익숙해지기
+강의 열심히 듣기!!
+">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/weekly_review_01/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/weekly_review_01/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Devy17&#39;s Workspace (Alt + H)">Devy17&#39;s Workspace</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      [플레이데이터 풀스택 백엔드 8기] 1주차 주간 회고
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-02-20 13:26:56 +0900 KST'>February 20, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<p><strong>플레이데이터 풀스택 백엔드 8기</strong> 과정이 드디어 시작되었다..!</p>
+<p>아직은 완전히 적응했다는 느낌이 들지는 않지만&hellip;<br>
+그래도 어쨌거나 한 주가 지났으니 회고를 작성해보고자 한다.</p>
+<hr>
+<h2 id="학습-내용">학습 내용<a hidden class="anchor" aria-hidden="true" href="#학습-내용">#</a></h2>
+<h3 id="218">2/18<a hidden class="anchor" aria-hidden="true" href="#218">#</a></h3>
+<ul>
+<li>OT 진행</li>
+<li>Git의 개요</li>
+<li>Git의 기본 커맨드 (<em>init, add, commit</em> 등..)</li>
+<li><em>branch</em>의 활용</li>
+</ul>
+<h3 id="219">2/19<a hidden class="anchor" aria-hidden="true" href="#219">#</a></h3>
+<ul>
+<li><em>merge</em>와 <em>conflict</em> 대처법</li>
+<li>Git 심화 활용 (<em>diff, stash, checkout</em> 등..)</li>
+<li><em>reset</em>과 <em>revert</em></li>
+<li>Github를 이용한 원격 저장소 관리</li>
+<li><em>push</em>와 <em>pull</em></li>
+</ul>
+<h3 id="220">2/20<a hidden class="anchor" aria-hidden="true" href="#220">#</a></h3>
+<ul>
+<li>PR (<em>Pull Request</em>)</li>
+<li><em>Fork</em></li>
+<li>Git flow 버전 관리 전략</li>
+<li>Github로 협업하기 실습 (<em>Collabortor, Issue, Project</em> 등&hellip;)</li>
+<li>Java 개요요</li>
+</ul>
+<h3 id="221">2/21<a hidden class="anchor" aria-hidden="true" href="#221">#</a></h3>
+<ul>
+<li>졸업식으로 인한 휴가&hellip; ㅠㅠ</li>
+</ul>
+<hr>
+<h2 id="개인-학습">개인 학습<a hidden class="anchor" aria-hidden="true" href="#개인-학습">#</a></h2>
+<ul>
+<li>현재 글을 쓰고 있는 이 블로그를 만들었다.  더 자세한 내용은 추후 포스팅을 통해 조금 더 자세히 다루어 볼 생각이다.
+<ul>
+<li>Github page 기능을 사용함</li>
+<li>hugo라는 static site generator를 사용함</li>
+<li>마크다운으로 블로그 작성</li>
+<li>yaml 문서 다뤄보기</li>
+<li>Github Action 사용</li>
+</ul>
+</li>
+</ul>
+<h2 id="좋았던-점">좋았던 점<a hidden class="anchor" aria-hidden="true" href="#좋았던-점">#</a></h2>
+<ul>
+<li>가장 좋았던 건 시설이 아닐까 싶다.. 집보다 학원이 더 집중이 잘되는 건 도대체 뭐냐고..</li>
+<li>강사님이 짱이다. 금요일에는 커피도 돌리셨다고 한다. 물론 나는 졸업 이슈로 받지 못했지만 ㅠㅠ 그래도 설명도 잘해주시고 질문도 되게 잘 받아주셔서 부담 없이 수업에 임할 수 있게 해주신다..</li>
+<li>3일 정도 밖에 오지 않아서인지는 모르지만, 아주 사소한 것이라도 불편한 부분이 없도록 노력해주시는 것이 보인다.</li>
+</ul>
+<hr>
+<h2 id="아쉬웠던-점">아쉬웠던 점<a hidden class="anchor" aria-hidden="true" href="#아쉬웠던-점">#</a></h2>
+<ul>
+<li>확실히 통학은 힘들다.. 알고 있었지만 지하철에서 보내는 시간이 조금 아까운 것은 어쩔 수 없는 것 같다..</li>
+<li>강남이기 때문에 주변 밥값이 살벌하다. 칼국수가 만원;; 조금 선 넘은 것 같다.</li>
+</ul>
+<hr>
+<h2 id="개선할-점">개선할 점<a hidden class="anchor" aria-hidden="true" href="#개선할-점">#</a></h2>
+<ul>
+<li>20일 점심시간 후 실습 직전 잠깐 졸 뻔했다.. 잠을 충분히 자도록 하는 것이 좋을 것 같다.</li>
+</ul>
+<hr>
+<h2 id="다음-주-계획">다음 주 계획<a hidden class="anchor" aria-hidden="true" href="#다음-주-계획">#</a></h2>
+<ul>
+<li>미뤄두었던 공룡책 강의 듣고 블로그 정리</li>
+<li>Linux 환경과 조금 더 친해지기</li>
+<li>Vim 에디터 익숙해지기</li>
+<li>강의 열심히 듣기!!</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Devy17&#39;s Workspace</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

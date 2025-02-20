@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Devy17&#39;s Workspace</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Devy17&#39;s Workspace</description>
+    <title>Posts on Devy17&#39;s Workspace</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Devy17&#39;s Workspace</description>
     <generator>Hugo -- 0.144.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Feb 2025 13:26:56 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[플레이데이터 풀스택 백엔드 8기] 1주차 주간 회고</title>
       <link>http://localhost:1313/posts/weekly_review_01/</link>
